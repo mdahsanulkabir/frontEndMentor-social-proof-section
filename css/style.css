@@ -1,10 +1,200 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700&display=swap');
 
-/* font-family: 'League Spartan', sans-serif; */
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'League Spartan', sans-serif;
+    font-size: 15px;
+}
+
+.container {
+    min-width: 300px;
+    max-width: 375px;
+    margin: 0 auto;
+}
+
+.banner {
+    margin-bottom: 35px;
+}
+
+.banner-head h1 {
+    font-size:45px;
+    color: hsl(300, 43%, 22%);
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px 20px;
+}
+
+.banner-head p {
+    color: hsl(303, 10%, 53%);
+    font-size: 16px;
+    text-align: center;
+    padding: 0 16px;
+    font-weight: 400;
+    line-height: 1.2;
+    word-spacing: .4em;
+}
+
+.banner-ratings div {
+    height: 50px;
+    background-color: hsl(300, 24%, 96%);
+    border-radius: 5px;
+    margin: 15px 15px;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.banner-ratings img {
+    width: 12px;
+    height: 12px;
+    margin-left: 5px;
+}
+
+h6 {
+    font-size: 12px;
+    padding-top: 5px;
+}
+
+.cards {
+    margin: 20px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card {
+    background-color: hsl(300, 43%, 22%);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.identity {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.identity img {
+    border-radius: 50%;
+    width: 40px;
+    margin-right: 20px;
+}
+
+.identity .name {
+    font-weight: 700;
+}
+
+.buyer-data {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.buyer-status {
+    color: hsl(333, 80%, 67%);
+}
+
+.card-body {
+    line-height: 1.3em;
+    font-size: 18px;
+}
+
+
+.attribution {
+    font-size: 12px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+}
+
+
+@media (min-width:800px) {
+    .container {
+        margin-top: 10vh;
+        min-width: 80%;
+        max-width: 600px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .banner {
+        margin: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .banner-head {
+        max-width: 350px;
+    }
+
+    .banner-head h1,
+    .banner-head p {
+        text-align: left;
+        padding-left: 0;
+    }
+
+    .banner-ratings {
+        align-self: center;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .banner-ratings div {
+        display: flex;
+        align-items: center;
+        width: 350px;
+        padding: 10px 25px;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    #one {
+        margin-right: auto;
+    }
+
+    #two {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #three {
+        margin-left: auto;
+    }
+
+    h6 {
+        display: inline-block;
+        margin-left: 20px;
+        padding: 0;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .card:nth-of-type(2) {
+        position: relative;
+        top: 20px;
+    }
+
+    .card:nth-of-type(3) {
+        position: relative;
+        top: 40px;
+    }
+
+    .attribution {
+        margin-top: 50px;
+        padding-bottom: 10px;
+    }
 }
